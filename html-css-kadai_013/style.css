@@ -1,10 +1,11 @@
 /* PC、スマホ共通スタイル */
 body {
-  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial,
+    sans-serif;
 }
 
 p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #main-visual > img {
@@ -41,9 +42,12 @@ PC用のスタイル
       margin-left: 20px;
   }
 
-  #nav-pc > a:link,
-  #nav-pc > a:visited {
-      color: #0d0d0d;
+  #nav-pc>a:link {
+    color: #0d0d0d;
+  }
+
+  #nav-pc>a:visited {
+    color: #0d0d0d;
   }
 
   #nav-pc > a:hover {
@@ -71,84 +75,69 @@ PC用のスタイル
   }
 
   #menu-sp {
-      display: block;
       float: right;
       padding: 0px;
-      cursor: auto;
+
   }
 
   #nav-sp {
       background-color: #ce933e;
       position: fixed;
       left: 0px;
-      top: 0;
+      top: 0px;
       height: 100%;
       width: 100%;
       display: none;
       z-index: 100;
-      flex-direction: column;
-      padding: 150px 0px 0px 0px;
-      align-items: center;
-      justify-content: flex-start;
-  }
-
-  #menu-toggle:checked + #menu-sp + #nav-sp {
-      display: flex;
-  }
+    }
 
   #nav-sp ul {
-      padding-left: 0px;
-      width: 100%
+      padding-left: 0;
   }
 
   #nav-sp li {
       list-style: none;
-      margin: 30px 0;
-      width: 100%
   }
 
   #close {
       position: absolute;
       top: 20px;
       right: 20px;
-      cursor: pointer;
   }
 
   #logo-sp {
-      margin: 0px 480px 30px 20px;
+      margin: 80px 0px 30px 20px;
   }
-
- #logo-sp img { 
-    width: 250px;
-    height: auto;
-  } 
 
   #nav-sp a {
       display: block;
-      color: #ffffff;
-      text-decoration: none;
-      font-size: x-large;
-  }
 
-  #nav-sp a:link,
-  #nav-sp a:visited,
-  #nav-sp a:hover,
-  #nav-sp a:active {
-      color: #ffffff;
+  } 
+  #nav-sp a:link {
+    color: #ffffff;
+}
+#nav-sp a:visited {
+    color: #ffffff;
+}
+#nav-sp a:hover {
+    text-decoration: underline;
+}
+#nav-sp a:active {
+    color: #ffffff;
+}
+
   }
 
   #nav-sp .menu {
       text-decoration: none;
       display: block;
-      margin: 0 20px;
+      margin: 0px 20px 0px 20px;
       height: 44px;
-      font-size: 24px;
+      font-size: 16px;
       background-image: url("images/arrow.png");
       background-repeat: no-repeat;
-      background-position: right top;
-      background-size: 30px;
+      background-position: right top; 
   }
-}
 
 /* PC用のメディアクエリ */
 @media screen and (min-width: 768px) {
